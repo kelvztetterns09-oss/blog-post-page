@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft — Blog Post Page</title>
+
+    <!--meta tags -->
+    <meta name="description"
+        content="A blog post exploring why accessibility should be a foundational part of web development, not an afterthought.">
+
+    <meta name="author" content="Maya Okonkwo">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>CodeCraft</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Why Accessibility Isn't Optional</h1>
+    </header>
+    <hr>
+    <main>
+        <article>
+            <section>
+                <p>Byline: September 3, 2026 by Maya Okonkwo</p>
+                <p>Accessibility is often treated as an afterthought, something to bolt on right before launch. But
+                    building
+                    with accessibility in mind from the start costs far less than retrofitting it later, and it makes
+                    your
+                    site better for every single visitor, not just those using assistive technology.</p>
+            </section>
+
+            <section>
+                <h2>Why It Matters</h2>
+                <p>When a site is accessible, it means more people can actually use it. Screen reader users,
+                    keyboard-only
+                    users, people with low vision, and people with motor impairments all benefit from thoughtful markup.
+                </p>
+                <ul>
+                    <li>Reaches a wider audience, including the estimated 1 in 4 adults living with a disability</li>
+                    <li>Improves SEO, since accessible markup and search engine parsing overlap heavily</li>
+                    <li>Reduces legal risk, as accessibility lawsuits have become increasingly common</li>
+                    <li>Often improves usability for everyone, not just people with disabilities</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Common Mistakes</h2>
+                <p>
+                    Many teams focus on visual polish while ignoring semantic meaning. Using a <code>div</code> styled
+                    to look
+                    like a button is <em>technically</em> clickable, but it's invisible to a screen reader unless marked
+                    up
+                    correctly. Semantic HTML is the foundation accessibility is built on — no amount of ARIA patching
+                    fixes
+                    a fundamentally non-semantic structure.</p>
+
+
+                <h3>Keyboard Navigation</h3>
+                <p>Every interactive element should be reachable and operable using only a keyboard. Try unplugging
+                    your
+                    mouse for ten minutes and navigating your own site — it's the fastest way to find what's broken.
+                </p>
+
+                <figure>
+                    <img src="laptop.png"
+                        alt="A pair of hands typing on a keyboard in front of a laptop displaying a webpage"
+                        title="web development" width="500" height="300">
+                    <figcaption>Keyboard navigation is often the first thing to break when accessibility is skipped
+                    </figcaption>
+                </figure>
+                <blockquote>
+                    <p>"The power of the Web is in its universality. Access by everyone regardless of disability is
+                        an
+                        essential aspect."</p>
+                    <footer>--<cite>Tim Berners-Lee, W3C</cite></footer>
+
+                </blockquote>
+
+            </section>
+
+            <section>
+                <h2>Code Sample</h2>
+                <p>A properly labeled <code>button</code> uses the native button element instead of a styled
+                    <code>div</code>, which gives you keyboard support and screen reader announcements for free.
+                </p>
+                <pre> <code>&lt;button type="submit"&gt;Save changes&lt;/button&gt;</code></pre>
+
+            </section>
+
+            <section>
+                <h2>Learn More</h2>
+                <p>For a deeper dive into accessible patterns, the <a href="https://www.w3.org/WAI/ARIA/apg/"
+                        target="_blank">WAI-ARIA Authoring Practices Guide</a> is the
+                    most reliable reference maintained by the W3C.</p>
+            </section>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy;2026 CodeCraft. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
